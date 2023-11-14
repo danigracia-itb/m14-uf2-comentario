@@ -25,6 +25,6 @@ import type Entry from "./types/Entry";
 const posts = reactive<Array<Entry>>([]);
 
 function submitForm(entry: Entry): void {
-    posts.push(entry);
+    posts.unshift(entry)
 }
 </script>
